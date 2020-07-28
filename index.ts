@@ -25,7 +25,7 @@ app.all('*', (req, res) => {
       },
       'response($res)'(r) {
         if (resMap) {
-          throw new Error('already')
+          throw new Error('response is already sent')
         }
 
         if (r instanceof sass.types.Map) {
