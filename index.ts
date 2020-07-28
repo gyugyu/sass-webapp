@@ -73,5 +73,5 @@ app.all('*', (req, res) => {
 })
 
 app.listen(3000, () => {
-  console.log('app start')
+  console.log('app started')
 })

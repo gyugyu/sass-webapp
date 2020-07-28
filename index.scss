@@ -1,7 +1,6 @@
 @use 'sass:map';
 
 $req: request();
-@debug $req;
 
 $res: (status-code: 404, body: 'not found');
 
