@@ -1,0 +1,16 @@
+{
+  "name": "sass-webapp",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "sass": "^1.26.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/redis": "^2.8.22",
+    "@types/sass": "^1.16.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  }
+}

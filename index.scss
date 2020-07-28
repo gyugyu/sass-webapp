@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+$req: request();
+@debug $req;
+
+$res: (status-code: 404, body: 'not found');
+
+@if (map.get($req, 'path') == '/') {
+  $foo: redis-get('foo') + 1;
+  $bar: redis-set('foo', $foo);
+  $res: map.merge($res, (status-code: 200, body: 'Hello, world! You are #{$foo} th visitor!!'))
+}
+
+$exit: response($res);
